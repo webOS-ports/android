@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="Halium/hybris-boot" />
+
+  <remote  name="webos-ports"
+           fetch="git://github.com/webOS-ports/"
+           revision="halium-5.1"/>
+           
+  <remote  name="Github"
+           fetch="git://github.com/"/>
+
+  <!-- system/core: do our own tweaks of init.rc
+  <remove-project name="mer-hybris/android_system_core" />
+  <project path="system/core" name="webOS-ports/android_system_core" groups="pdk" revision="wop-12.1"/>
+ -->
+  <!-- luneos/luneos-hal: contain patches to apply before starting the build. -->
+  <project path="luneos/luneos-hal" name="android_luneos_hal" remote="webos-ports" revision="halium-5.1"/>
+
+  <!-- Halium 5.1 Tenderloin -->
+  <remote  name="evervolv"
+           fetch="git://github.com/Evervolv/"
+           revision="lollipop-5.1"
+           review="review.evervolv.com"/>
+           
+  <project path="kernel/htc/msm8960" name="shr-distribution/linux" remote="Github" revision="tenderloin/3.4/cm-12.1"/>
+  <project path="device/hp/tenderloin" name="android_device_hp_tenderloin" remote="webos-ports" revision="halium-5.1"/>
+  <project path="device/hp/tenderloin-common" name="android_device_hp_tenderloin-common" remote="webos-ports" revision="halium-5.1"/>
+  <project path="vendor/hp" name="android_vendor_hp" remote="evervolv"/>
+
+  <project path="hardware/atheros" name="android_hardware_atheros" remote="evervolv" />
+  <project path="hardware/qcom/audio-caf/msm8660" name="android_hardware_qcom_audio-caf" remote="evervolv" groups="qcom,qcom_audio" revision="lollipop-5.1-8960" />
+  <project path="hardware/qcom/display-caf/msm8660" name="android_hardware_qcom_display-caf" remote="webos-ports" groups="qcom,qcom_display" revision="tenderloin/halium-5.1" />
+  <project path="hardware/qcom/media-caf/msm8660" name="android_hardware_qcom_media-caf" remote="evervolv" groups="qcom,qcom_media" revision="lollipop-5.1-8960" />
+  
+  <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp" />
+  
+  <!-- TheMuppets vendor for LGE (Mako and Hammerhead) -->
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="Github" revision="cm-12.1"/>
+  <!-- Halium 5.1 Hammerhead -->
+  <project path="device/lge/hammerhead" name="Halium/android_device_lge_hammerhead" remote="halium" />
+  <project path="kernel/lge/hammerhead" name="Halium/android_kernel_lge_hammerhead" remote="halium" />
+  <!-- Halium 5.1 Mako -->
+  <project path="device/lge/mako" name="ubports/android_device_lge_mako" remote="Github" revision="ubp-5.1" />
+  <project path="kernel/google/msm" name="ubports/android_kernel_google_msm" remote="Github" revision="ubp-5.1" />
+
+</manifest>
