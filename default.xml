@@ -8,7 +8,8 @@
   <remote name="los"
 	fetch="https://github.com/LineageOS"
 	revision="refs/heads/cm-14.1" />
-
+  <remote name="Github"
+        fetch="git://github.com/" />
   <!-- Uses ubports gerrit server since halium does not have one yet -->
   <remote name="hal"
 	fetch="https://github.com"
@@ -25,7 +26,7 @@
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
 
-  <project path="build" name="Halium/android_build" groups="pdk,tradefed" remote="hal" >
+  <project path="build" name="Herrie82/android_build" groups="pdk,tradefed" remote="Github" revision="halium-7.1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
@@ -226,7 +227,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
   <project path="system/bt" name="android_system_bt" groups="pdk" remote="los" />
-  <project path="system/core" name="Halium/android_system_core" revision="socket-path" groups="pdk" remote="hal" />
+  <project path="system/core" name="Herrie82/android_system_core" revision="halium-7.1" groups="pdk" remote="Github" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="los" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
   <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="los" />
