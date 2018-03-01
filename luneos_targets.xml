@@ -24,6 +24,8 @@
   <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="Github" revision="cm-14.1"/>
   <!-- TheMuppets vendor for Huawei -->
   <project path="vendor/huawei" name="win8linux/proprietary_vendor_huawei" remote="Github" revision="halium-7.1"/>
+  <!-- TheMuppets vendor for HTC -->
+  <project path="vendor/htc" name="proprietary_vendor_htc" remote="Github" revision="cm-14.1"/>
 
   <!-- Halium 7.1 Xiaomi Mido -->
   <project path="device/xiaomi/mido" name="herrie82/android_device_xiaomi_mido" remote="Github" revision="pgz-14.1"/>
@@ -41,7 +43,10 @@
   <project path="device/huawei/angler" name="lineageos/android_device_huawei_angler" remote="Github" revision="cm-14.1"/>
   <project path="kernel/huawei/angler" name="win8linux/android_kernel_huawei_angler" remote="Github" revision="halium-7.1"/>
 
-  
+  <!-- Halium 7.1 HTC 10 (pme) -->
+  <project path="device/htc/pme" name="halium/android_device_htc_pme" remote="Github" revision="halium-7.1"/>
+  <project path="kernel/htc/msm8996" name="halium/android_kernel_htc_msm8996" remote="Github" revision="halium-7.1"/>
+
   <!-- Seeing that OnePlus is a daughter company of Oppo, it seems it uses some of it's technical bits, so we include these there too -->
   <project path="device/oppo/common" name="lineageos/android_device_oppo_common" remote="Github" revision="cm-14.1"/>
    
