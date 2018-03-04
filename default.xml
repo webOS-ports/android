@@ -135,7 +135,7 @@
 
   <project path="frameworks/av" name="Halium/android_frameworks_av" groups="pdk" remote="hal" />
   <project path="frameworks/base" name="Halium/android_frameworks_base" groups="pdk-cw-fs" remote="hal" />
-  <project path="frameworks/native" name="Halium/android_frameworks_native" groups="pdk" remote="hal" />
+  <project path="frameworks/native" name="Herrie82/android_frameworks_native" groups="pdk" remote="Github" revision="herrie/tempfix-halium-7.1" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
