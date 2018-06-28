@@ -30,6 +30,11 @@
   <!-- Halium 7.1 Xiaomi Mido -->
   <project path="device/xiaomi/mido" name="herrie82/android_device_xiaomi_mido" remote="Github" revision="pgz-14.1"/>
   <project path="kernel/xiaomi/msm8953" name="piggz/android_kernel_xiaomi_msm8953" remote="Github" revision="pgz-14.1-eb8"/>
+  
+  <!-- Halium 7.1 Xiaomi Rosy -->
+  <project path="device/xiaomi/rosy" name="Tofee/android_device_xiaomi_rosy" remote="Github" revision="lineage-14.1"/>
+  <project path="kernel/xiaomi/rosy" name="Tofee/android_kernel_xiaomi_msm8953" remote="Github" revision="los14.1"/>
+  <project path="vendor/xiaomi/rosy" name="Tofee/vendor_xiaomi_rosy" remote="Github" revision="los14.1"/>
 
   <!-- Halium 7.1 OnePlus Onyx -->
   <project path="device/oneplus/onyx" name="lineageos/android_device_oneplus_onyx" remote="Github" revision="cm-14.1"/>
