@@ -7,7 +7,7 @@
 
   <remote  name="webos-ports"
            fetch="git://github.com/webOS-ports/"
-           revision="halium-7.1"/>
+           revision="halium-9.0"/>
            
   <remote  name="Github"
            fetch="git://github.com/"/>
