@@ -2,8 +2,8 @@
 <manifest>
   <include name="halium/default.xml"/>
   
-  <remove-project name="Halium/hybris-boot" />
   <remove-project name="Halium/halium-boot" />
+  <remove-project name="mer-hybris/hybris-boot" />
 
   <remote  name="webos-ports"
            fetch="git://github.com/webOS-ports/"
@@ -12,7 +12,8 @@
   <remote  name="Github"
            fetch="git://github.com/"/>
 
-  <!-- luneos/luneos-hal: contain patches to apply before starting the build. -->
-  <project path="luneos/luneos-hal" name="android_luneos_hal" remote="webos-ports"/>
+  <!-- use Tofee's fork, until it's merged upstream -->
+  <remove-project name="Halium/halium-devices" />
+  <project path="halium/devices" name="Tofee/halium-devices" remote="Github" revision="halium-9.0" />
    
 </manifest>
