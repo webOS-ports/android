@@ -12,8 +12,4 @@
   <remote  name="Github"
            fetch="git://github.com/"/>
 
-  <!-- use Tofee's fork, until it's merged upstream -->
-  <remove-project name="Halium/halium-devices" />
-  <project path="halium/devices" name="Tofee/halium-devices" remote="Github" revision="halium-9.0" />
-   
 </manifest>
