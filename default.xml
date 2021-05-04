@@ -3,7 +3,8 @@
   <include name="halium/default.xml"/>
   
   <remove-project name="Halium/halium-boot" />
-  <remove-project name="mer-hybris/hybris-boot" />
+ <!-- FIXME: We cannot remove mer-hybris/hybris-boot because halium-patches' apply-patches.sh script will act up -->
+ <!-- <remove-project name="mer-hybris/hybris-boot" /> -->
 
   <remote  name="webos-ports"
            fetch="git://github.com/webOS-ports/"
